@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    margin: 2rem;
+    height: 100px;
+    width: 200px;
+    transform: scale(90%);
+}
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+}
+
+.primary-header {
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+    justify-content: space-around;
+    position: fixed;
+    background-color: black;
+    z-index: 9999999999999;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.primary-navigation a>[aria-hidden="true"] {
+    font-weight: 500;
+    margin-inline: 0.75em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social {
+    width: auto;
+    transform: scale(70%);
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.flex-left-right{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.flex-left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-right{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video{
+    object-fit: cover;
+}
+h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 50px;
+    max-width: 80%;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    max-width: 80%;
+    text-align: left;
+}
+.highlight{
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.flex-three-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.flex-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    margin: 5%;
+}
+.flex-col img{
+    height: 300px;
+    width: 300px;
+}
+.flex-col h4{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5%;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.flex-col p{
+    text-align: center;
+    font-weight: 300;
+}
+.flex-left img{
+    width: 90%;
+    height: 60%;
+}
+.pointer{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 200%;
+}
+.box{
+    height: 70%;
+    width: 80%;
+    background: #AADC3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box form{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.box form input{
+    margin-bottom: 5%;
+}
+.pointer img{
+    height: 50px;
+    width: 50px;
+    
+}
+.pointer .text{
+    margin-left: 10%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text h3{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.text p{
+    color: white;
+    font-size: 90%;
+    font-weight: 200;
+}
+@media(max-width: 1250px) {
+    .primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0 0% 100%/0.1);
+        backdrop-filter: blur(0.5rem);
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-header {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        position: absolute;
+        transform: scale(90%);
+        top: 0.5%;
+        left: 2;
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .social {
+        position: absolute;
+        top: 40%;
+        left: 37.5%;
+    }
+
+    @supports(backdrop-filter: blur(0.5rem)) {
+        .primary-navigation {
+            background: hsl(0 0% 100%/0.1);
+            backdrop-filter: blur(0.5rem);
+        }
+
+        .mobile-nav-toggle {
+            position: absolute;
+            background-color: transparent;
+
+            width: 2rem;
+            aspect-ratio: 1;
+            z-index: 9999;
+            top: 4rem;
+            right: 2rem;
+            background-image: url(../assets/hamburger/open.svg);
+            transition: background-image 150ms ease-out;
+            background-repeat: no-repeat;
+            border: 0;
+            display: block;
+        }
+
+
+        .mobile-nav-toggle[aria-expanded="true"] {
+            background-image: url(../assets/hamburger/closed.svg);
+        }
+
+    }
+}
+
+
+
+
+@media (max-width: 950px) {
+    .social {
+        left: 35%;
+        top: 20%;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    p{
+        text-align: center;
+    }
+    .flex-left-right{
+        flex-direction: column;
+    }
+}
+@media (max-width:800px){
+    .social{
+        top:25%
+    }
+    
+}
+@media (max-width: 700px) {
+    .social {
+        top: 70%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .social {
+        display: none;
+        top: 75%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 550px) {
+    .social {
+        top: 80%;
+        left: 20%;
+        transform: scale(80%);
+
+    }
+}
+
+@media (max-width: 450px) {
+    .social {
+        top: 75%;
+        left: 10%;
+        transform: scale(70%);
+    }
+}
+
+@media (max-width: 399px) {
+    .social {
+        top: 80%;
+        left: 7.5%;
+        transform: scale(70%);
+    }
+}
+
+@media (max-width: 376px) {
+    .social {
+        top: 100%;
+        left: 5%;
+        transform: scale(60%);
+        width: 100%;
+    }
+}
+@media (max-width: 361px)
+{
+    .social{
+        top:90%
+    }
+}
+@media (min-width: 1350px) {
+    .primary-navigation {
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 2rem;
+        padding-inline: clamp(1rem, 10vw, 1rem);
+    }
+}

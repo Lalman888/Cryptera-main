@@ -1,0 +1,105 @@
+html {
+  background-color: black;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+div {
+  background-color: #000;
+  color: #fff;
+}
+
+.section1,
+.section3 {
+  min-height: 100vh;
+  background-color: #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 50px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.content-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 400px;
+  width: 50%;
+  font-size: 40px;
+  padding-left: 5em;
+}
+
+.images-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.heading {
+  opacity: 0;
+  position: absolute;
+  top: 2em;
+}
+
+.scroll-img {
+  width: 30vw;
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+  top: 5em;
+}
+
+.active {
+  opacity: 1;
+  /* // display: block; */
+}
+
+@media only screen and (min-width: 1025px) {
+  .section1,
+  .section3 {
+    font-size: 50px;
+  }
+  
+  .content-box{
+    font-size: 40px;  
+  padding-left: 5em;
+  }
+  
+}
+@media only screen and (max-width: 1024px) {
+  .section1,
+  .section3 {
+    font-size: 35px;
+  }
+  .content-box{
+    font-size: 30px;  
+  padding-left: 3em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .section1,
+  .section3 {
+    font-size: 20px;
+  }
+  .content-box{
+    font-size: 25px;  
+  padding-left: 1em;
+  }
+}
