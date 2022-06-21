@@ -48,7 +48,12 @@ section {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-
+.primary-navigation a:hover {
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 .primary-navigation a>[aria-hidden="true"] {
     font-weight: 500;
     margin-inline: 0.75em;
@@ -59,7 +64,9 @@ section {
     width: auto;
     transform: scale(70%);
 }
-
+.social a img:hover{
+    transform: scale(115%);
+}
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -251,7 +258,7 @@ h2{
             z-index: 9999;
             top: 4rem;
             right: 2rem;
-            background-image: url(../assets/hamburger/open.svg);
+            background-image: url(/assets/hamburger/open.svg);
             transition: background-image 150ms ease-out;
             background-repeat: no-repeat;
             border: 0;
@@ -260,7 +267,7 @@ h2{
 
 
         .mobile-nav-toggle[aria-expanded="true"] {
-            background-image: url(../assets/hamburger/closed.svg);
+            background-image: url(/assets/hamburger/closed.svg);
         }
 
     }
