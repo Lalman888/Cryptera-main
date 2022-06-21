@@ -259,6 +259,10 @@ h2{
             top: 4rem;
             right: 2rem;
             background-image: url(/assets/hamburger/open.svg);
+            background-size: cover  ;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
             transition: background-image 150ms ease-out;
             background-repeat: no-repeat;
             border: 0;
