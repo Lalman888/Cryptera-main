@@ -113,7 +113,12 @@ ul{
     font-family: 'Poppins', sans-serif;
 }
 
-li{
+.learn-left ul li{
+    margin-left: 5%;
+    width: 90%;
+}
+.learn-right ul li{
+    width: 90%;
     margin-left: 5%;
 }
   .content-box {
