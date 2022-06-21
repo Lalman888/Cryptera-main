@@ -235,6 +235,7 @@ h2{
 
     .primary-navigation[data-visible="true"] {
         transform: translateX(0%);
+        -webkit-transform:translateX(0%)
     }
 
     .social {
