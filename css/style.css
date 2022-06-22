@@ -10,6 +10,9 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
 section {
     height: 100vh;
     width: 100vw;
@@ -170,7 +173,7 @@ h2{
 .box{
     height: 70%;
     width: 80%;
-    background: #AADC3E;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +262,7 @@ h2{
             z-index: 9999;
             top: 4rem;
             right: 2rem;
-            background-image: url(/assets/hamburger/open.svg);
+            background-image: url("/assets/hamburger/open.svg");
             background-size: contain;
             -o-background-size: contain;
             -moz-background-size: contain;
@@ -272,7 +275,7 @@ h2{
 
 
         .mobile-nav-toggle[aria-expanded="true"] {
-            background-image: url(/assets/hamburger/closed.svg);
+            background-image: url("/assets/hamburger/closed.svg");
         }
 
     }
