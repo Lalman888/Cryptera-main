@@ -76,4 +76,16 @@
     .flex-left{
         justify-content: flex-end;
     }
+    .flex-left-right .flex-left h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 376px)
+{
+    .flex-right{
+        display: none;
+    }
+    .flex-left{
+        justify-content: center;
+    }
 }
