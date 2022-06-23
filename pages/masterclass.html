@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptera - Learn Cryptocurrency, Metaverse, NFTs, Trading</title>
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/masterclass.css">
     <link rel="shortcut icon" href="/assets/logo/cryptera-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,48 +63,28 @@
     </script>
 </head>
 <body class="masterclass">
-    <header class="primary-header flex" id="primary-header">
-        <div class="logo">
-            <a href="/index.html"><img src="/assets/logo/cryptera-logo.svg" alt=""></a>
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+              <a href="/index.html" class="logo"><img src="/assets/logo/cryptera-logo.svg" alt="" class="img-fluid"></a>
+        
+              <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                  <li><a href="/pages/join-us.html">Join Us</a></li>
+                  <li><a href="/pages/masterclass.html">Masterclass</a></li>
+                  <li><a href="/pages/blogs.html">Blogs</a></li>
+                  <li><a href="/pages/resources.html">Resources</a></li>
+                  <li><a href="/pages/about-us.html">About Us</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+              </nav><!-- .navbar -->
+              <div class="header-social-links">
+                <a target="_blank" href="https://twitter.com/theCryptera"><img src="/assets/logo/twitter.svg" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/thecryptera/"><img src="/assets/logo/instagram.svg" alt=""></a>
+                <a target="_blank" href="https://t.me/teamcryptera"><img src="/assets/logo/telegram.svg" alt=""></a>
+                <a target="_blank" href="https://discord.com/invite/pbzTER4G7V"><img src="/assets/logo/discord.svg" alt=""></a>
+              </div>
         </div>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
-                class="sr-only"></span>
-        </button>
-        <nav>
-            <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
-                <li class="active">
-                    <a href="/pages/join-us.html">
-                        <span aria-hidden="true">Join Us</span>
-                    </a>
-                <li>
-                    <a href="/pages/masterclass.html">
-                        <span aria-hidden="true">Masterclass</span>
-                    </a>
-                <li>
-                    <a href="/pages/blogs.html">
-                        <span aria-hidden="true">Blogs</span>
-                    </a>
-                <li>
-                    <a href="/pages/resources.html">
-                        <span aria-hidden="true">Resources</span>
-                    </a>
-                <li>
-                    <a href="/pages/about-us.html">
-                        <span aria-hidden="true">About Us</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="social">
-            <a target="_blank" href="https://twitter.com/theCryptera"><img class="social-logo" src="/assets/logo/twitter.svg" alt=""></a>
-
-            <a target="_blank" href="https://www.instagram.com/thecryptera/"><img class="social-logo" src="/assets/logo/instagram.svg" alt=""></a>
-
-            <a target="_blank" href="https://t.me/teamcryptera"><img class="social-logo" src="/assets/logo/telegram.svg" alt=""></a>
-
-            <a target="_blank" href="https://discord.com/invite/pbzTER4G7V"><img class="social-logo" src="/assets/logo/discord.svg" alt=""></a>
-        </div>
-    </header>
+      </header>
     <section class="flex-left-right">
         <div class="flex-left">
             <h1>The most <br> <span class="highlight">Comprehensive Modules</span> in the crypto </h1>
@@ -268,7 +251,7 @@
 </body>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js'></script>
-    <script src="/js/nav.js"></script>
+    <script src="/js/main.js"></script>
     <script src="/js/imgmove.js"></script>
     <script src="/js/gsap.js"></script>
 </html>

@@ -1,0 +1,79 @@
+.flex-left-right .flex-left h1 {
+    color: white;
+    font-size: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+.title{
+    animation: dropdown 2.95s infinite;  
+}
+@keyframes dropdown{
+    0%{
+        opacity: 0.5;
+        transform: translateY(-30px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+#title{
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#uc_super_fun_liquid_button_elementor39409 {
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    z-index: 2;
+}
+#uc_super_fun_liquid_button_elementor39409 canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 250px;
+    height: 100px;
+
+}
+#uc_super_fun_liquid_button_elementor39408 {
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    z-index: 2;
+}
+#uc_super_fun_liquid_button_elementor39408 canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 250px;
+    height: 100px;
+
+}
+@media (max-width:1000px)
+{
+    .flex-left{
+        justify-content: flex-end;
+    }
+}

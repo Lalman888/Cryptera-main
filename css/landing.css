@@ -31,7 +31,7 @@ iframe{
     top: 30%;
     left: 10%;
 
-    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -76,19 +76,7 @@ iframe{
 
 
 
-.flex-left-right .flex-left h1 {
-    color: white;
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    font-size: 90px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-align: left;
 
-
-
-}
 
 .uc-liquid-button-wrapper {
     position: absolute;
@@ -188,12 +176,7 @@ form button{
         left: 0%;
         top: 50%;
     }
-    .flex-left-right .flex-left h1 {
-        font-size: 80px;
-        text-align: center;
-        left: 35%;
-        top: 27.5%;
-    }
+
     .word {
         width: 100%;
         left: 0%;
@@ -225,10 +208,7 @@ form button{
     .morphing{
         top: 50%
     }
-    .flex-left-right .flex-left h1 {
-        left: 35%;
-        top: 26%;
-    }
+  
 }
 @media (max-width: 700px) {
     .morphing {
@@ -252,12 +232,7 @@ form button{
         left: 0%;
         top: 60%;
     }
-    .flex-left-right .flex-left h1 {
-        font-size: 65px;
-        text-align: center;
-        left: 32.5%;
-        top: 32%;
-    }
+
 }
 
 @media (max-width: 550px) {
@@ -267,12 +242,7 @@ form button{
         left: 0%;
         top: 50%;
     }
-    .flex-left-right .flex-left h1 {
-        font-size: 55px;
-        text-align: center;
-        left: 32.5%;
-        top: 29%;
-    }
+
     .uc-liquid-button-wrapper{
         top: 45%;
     }
@@ -285,12 +255,7 @@ form button{
         left: 0%;
         top: 35%;
     }
-    .flex-left-right .flex-left h1 {
-        font-size: 45px;
-        text-align: center;
-        left: 34.5%;
-        top: 29%;
-    }
+
     .word {
         width: 100%;
         left: 0%;
@@ -309,12 +274,6 @@ form button{
         top: 40%;
     }
 
-    .flex-left-right .flex-left h1 {
-        font-size: 40px;
-        text-align: center;
-        left: 35%;
-        top: 30%;
-    }
 
     .word {
 
@@ -329,12 +288,7 @@ form button{
         top: 30%;
         left: 0%;
     }
-    .flex-left-right .flex-left h1 {
-        font-size: 40px;
-        text-align: center;
-        left: 35%;
-        top: 32%;
-    }
+
     .word {
 
         top: 47%;
@@ -351,10 +305,7 @@ form button{
 }
 @media (max-width: 361px)
 {
-    .flex-left-right .flex-left h1 {
-        left: 35%;
-        top: 32%;
-    }
+
     .morphing{
         top: 30.5%;
     }
