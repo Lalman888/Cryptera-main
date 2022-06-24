@@ -71,6 +71,14 @@
     height: 100px;
 
 }
+.bgspiral{
+    background-image: url(/assets/img/spiral.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flex-left-right .flex-left iframe{
+    width: 80%;
+}
 @media (max-width:1000px)
 {
     .flex-left{
@@ -78,6 +86,20 @@
     }
     .flex-left-right .flex-left h1{
         font-size: 50px;
+    }
+    .btn-wrap{
+        width: 100%;
+    }
+}
+@media (max-width:450px)
+{
+    #uc_super_fun_liquid_button_elementor39409 canvas {
+        width: 200px;
+        height: 80px;
+    }
+    #uc_super_fun_liquid_button_elementor39408 canvas {
+        width: 200px;
+        height: 80px;
     }
 }
 @media (max-width: 376px)
