@@ -5,12 +5,47 @@
     font-weight: 700;
     text-align: left;
 }
-.title{
-    animation: dropdown 2.95s infinite;  
+
+.rotate::before {
+    content: "Crypto";
+    animation: animate infinite;
+    animation-duration: 16s;
+    padding-left: 10px;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+@keyframes animate {
+    
+    0%{
+        
+    }
+    5%{
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(0px);
+        content: "Crypto";
+    }
+    30%{
+        opacity: 0;
+        transform: translateY(-30px);
+        content: "Trading";
+    }
+    50% {
+        content: "Trading";
+    }
+
+    75% {
+        content: "Metaverse";
+    }
+    100%{
+        content: "NFT";
+    }
 }
 @keyframes dropdown{
     0%{
-        opacity: 0.5;
+        opacity: 0;
         transform: translateY(-30px);
     }
     50%{
