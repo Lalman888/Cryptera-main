@@ -351,6 +351,9 @@ h2{
         display: block;
         width: 40vw;
     }
+    .learn-title{
+        margin-top: 20%;
+    }
 }
 
 @media (max-width: 399px) {
