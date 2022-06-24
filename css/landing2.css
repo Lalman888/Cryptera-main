@@ -75,6 +75,8 @@
     background-image: url(/assets/img/spiral.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
 }
 .flex-left-right .flex-left iframe{
     width: 80%;
@@ -110,4 +112,47 @@
     .flex-left{
         justify-content: center;
     }
+}
+.box{
+    border: 3px solid;
+    border-color: #9DD317;
+    border-radius: 20px;
+    background: linear-gradient(136.65deg, rgba(255, 255, 255, 0) 0%, rgba(247, 254, 233, 0) 73.62%, #AADC3E 116.8%);
+}
+form input{
+    
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 90%;
+
+}
+
+form label{
+color: white;
+font-family: 'Poppins', sans-serif;
+font-weight: 200;
+font-size: 90%;
+}
+
+form button{
+color: white;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+width: 50%;
+background: linear-gradient(90.85deg, #9DD317 0%, #36E25C 79.69%, #32EC93 100%);
+border-radius: 10px;
+height: 150%;
+
+}
+.terms{
+display: flex;
+justify-content: flex-start;
+width: 100%;
 }
