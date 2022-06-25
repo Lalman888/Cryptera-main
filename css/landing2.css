@@ -5,14 +5,10 @@
     font-weight: 700;
     text-align: left;
 }
-.rotate::before {
-    content: "Crypto";
-    animation: animate infinite 16s;
-    padding-left: 10px;
-}
+
 
 .title{
-    animation: dropdown infinite 5s ease-in;
+    animation: dropdown infinite 3s ease-in;
       
 }
 @keyframes dropdown{
@@ -29,24 +25,7 @@
     }
 }
 
-@keyframes animate {
-    
 
-    20% {
-        content: "Crypto";
-    }
-
-    45% {
-        content: "Trading";
-    }
-
-    70% {
-        content: "Metaverse";
-    }
-    100%{
-        content: "NFTs";
-    }
-}
 #title{
     background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
     -webkit-background-clip: text;
