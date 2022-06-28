@@ -7,7 +7,7 @@ function setScrollText(){
       trigger: '#heading1',
       toggleActions: 'play reverse play reverse',
       start: '0s',
-      end: '+=1000s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -16,8 +16,8 @@ function setScrollText(){
     scrollTrigger: {
       trigger: '#heading2',
       toggleActions: 'play reverse play reverse',
-      start: '+=1000s',
-      end: '+=1000s',
+      start: '+=500s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -26,8 +26,8 @@ function setScrollText(){
     scrollTrigger: {
       trigger: '#heading3',
       toggleActions: 'play reverse play reverse',
-      start: '+=2000s',
-      end: '+=1000s',
+      start: '+=1000s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -36,8 +36,8 @@ function setScrollText(){
     scrollTrigger: {
       trigger: '#heading4',
       toggleActions: 'play reverse play reverse',
-      start: '+=3000s',
-      end: '+=1000s',
+      start: '+=1500s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -47,8 +47,8 @@ function setScrollText(){
     scrollTrigger: {
       trigger: '#heading5',
       toggleActions: 'play reverse play reverse',
-      start: '+=4000s',
-      end: '+=1000s',
+      start: '+=2000s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -62,7 +62,7 @@ function setScrollImages() {
       trigger: '#img1',
       toggleActions: 'play reverse play reverse',
       start: '0s',
-      end: '+=1000s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -71,8 +71,8 @@ function setScrollImages() {
     scrollTrigger: {
       trigger: '#img2',
       toggleActions: 'play reverse play reverse',
-      start: '+=1000s',
-      end: '+=1000s',
+      start: '+=500s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -81,8 +81,8 @@ function setScrollImages() {
     scrollTrigger: {
       trigger: '#img3',
       toggleActions: 'play reverse play reverse',
-      start: '+=2000s',
-      end: '+=1000s',
+      start: '+=1000s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -91,8 +91,8 @@ function setScrollImages() {
     scrollTrigger: {
       trigger: '#img4',
       toggleActions: 'play reverse play reverse',
-      start: '+=3000s',
-      end: '+=1000s',
+      start: '+=1500s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -102,8 +102,8 @@ function setScrollImages() {
     scrollTrigger: {
       trigger: '#img5',
       toggleActions: 'play reverse play reverse',
-      start: '+=4000s',
-      end: '+=1000s',
+      start: '+=2000s',
+      end: '+=500s',
     },
     opacity: 1,
   });
@@ -113,7 +113,7 @@ function setScrollImages() {
 gsap.to('.head', {
   scrollTrigger: {
     pin: '.head',
-    end: '+=5000s',
+    end: '+=2500s',
     pinSpacing: true,
   },
 });
