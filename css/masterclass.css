@@ -32,7 +32,7 @@
 }
 @keyframes imgcycle {
     100% {
-      transform: rotateY(-43deg);
+      transform: rotateY(-30deg);
     }
   }
   .about h1{
