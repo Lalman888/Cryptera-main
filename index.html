@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css"/>
 </head>
-<body>
+<body onload="myFunction()">
   <style type="text/css">
     #uc_super_fun_liquid_button_elementor35083 {
         background: none;
@@ -38,17 +38,18 @@
         z-index: -1;
     }
   </style>
+  <div id="loading"></div>
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
           <a href="/index.html" class="logo"><img src="/assets/logo/cryptera-logo.svg" alt="" class="img-fluid"></a>
     
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-              <li><a href="/pages/join-us.html">Join Us</a></li>
-              <li><a href="/pages/masterclass.html">Masterclass</a></li>
-              <li><a href="/pages/blogs.html">Blogs</a></li>
-              <li><a href="/pages/resources.html">Resources</a></li>
               <li><a href="/pages/about-us.html">About Us</a></li>
+              <li><a href="/pages/masterclass.html">Masterclass</a></li>
+              <li><a href="/coming soon/index.html">Blogs</a></li>
+              <li><a href="/coming soon/index.html">Resources</a></li>
+              <li><a href="/coming soon/index.html">Join Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -218,4 +219,50 @@
         speed:3000
     });
   </script>
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?6342';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Cryptera",
+      "brandSubTitle":"Chats encrypted like Crypto",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"9999999999"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+<script>
+  var preloader = document.getElementById('loading');
+    
+    function myFunction() {
+      setTimeout(removeLoader, 2000);
+    }
+    function removeLoader() {
+      preloader.style.display = 'none';
+    }
+</script>
 </body>
