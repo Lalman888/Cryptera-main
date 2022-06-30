@@ -74,6 +74,13 @@ h1{
     font-size: 50px;
     max-width: 80%;
 }
+.bottom-line{
+    width: 90%;
+    height: 2px;
+    display: flex;
+    justify-self: center;
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 68.92%, #32EC93 88.18%, #000 92.5%);
+}
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -316,6 +323,9 @@ width: 100%;
 {
     .flex-left-right{
         flex-direction: column;
+    }
+    .bottom-line{
+        display: none;
     }
 }
 

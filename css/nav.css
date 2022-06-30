@@ -43,7 +43,7 @@
   }
   .navbar li {
     position: relative;
-    padding: 10px 0 10px 28px;
+    padding: 10px 28px 10px 0px;
   }
   .navbar a, .navbar a:focus {
     display: flex;
