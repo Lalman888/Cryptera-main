@@ -78,7 +78,7 @@ p{
     font-weight: 500;
     color: white;
     max-width: 80%;
-    text-align: left;
+    text-align: justify;
 }
 .highlight{
     background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
@@ -127,6 +127,7 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
 }
 .flex-col p{
     text-align: center;
