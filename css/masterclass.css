@@ -28,11 +28,11 @@
     transform-style: preserve-3d;
     animation: imgcycle 5s infinite alternate ease-in-out -7.5s;
     animation-fill-mode: forwards;
-    transform: rotateY(33deg) translateZ(0);
+    transform: rotateY(25deg) translateZ(0);
 }
 @keyframes imgcycle {
     100% {
-      transform: rotateY(-30deg);
+      transform: rotateY(-15deg);
     }
   }
   .about h1{
@@ -125,10 +125,7 @@ ul{
         top: 10em;
         left: 15%;
     }
-    .images-box{
-        top: -40%;
-        left: 25%;
-    }
+   
 }
 
 @media (max-width: 450px) {
