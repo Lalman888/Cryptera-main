@@ -113,7 +113,7 @@ function setScrollImages() {
 gsap.to('.head', {
   scrollTrigger: {
     pin: '.head',
-    end: '+=1500s',
+    end: '+=1700s',
     pinSpacing: true,
   },
 });
