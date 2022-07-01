@@ -6,10 +6,10 @@ function setScrollText(){
     scrollTrigger: {
       trigger: '#img1',
       toggleActions: 'play reverse play reverse',
-      start: '0s',
-      end: '+=500s',
+      start: '+=500s',
+      end: '+=1700s',
     },
-    opacity: 1,
+    opacity: 0,
   });
 
   gsap.to('#heading2', {
@@ -61,10 +61,10 @@ function setScrollImages() {
     scrollTrigger: {
       trigger: '#img1',
       toggleActions: 'play reverse play reverse',
-      start: '0s',
-      end: '+=500s',
+      start: '+=500s',
+      end: '+=1700s',
     },
-    opacity: 1,
+    opacity: 0,
   });
 
   gsap.to('#img2', {

@@ -546,10 +546,10 @@ width: 100%;
     top: 5.5em;
 }
 .lpscroll-img3{
-    width: 90%;
+    width: 40%;
     opacity: 0;
     position: absolute;
-    top: 13em;
+    top: 6em;
 }
 @media (max-width: 1025px){
     .lpheading1{
@@ -565,8 +565,8 @@ width: 100%;
         width: 75%;
     }
     .lpscroll-img3{
-        width: 90%;
-        top: 11.5em;
+        width: 40%;
+        top: 6em;
     }
 }
 
