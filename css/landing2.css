@@ -117,3 +117,93 @@
         justify-content: center;
     }
 }
+
+.lpheading1{
+    opacity: 0;
+    position: absolute;
+    top: 6.5em;
+    left: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.lpscroll1{
+    opacity: 0;
+    position: absolute;
+    top: 18.5em;
+    left: 4em;
+    font-size: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.lpscroll-img1{
+    width: fit-content;
+    opacity: 0;
+    position: absolute;
+    top: 3em;
+}
+.lpscroll-img2{
+    width: 60%;
+    opacity: 0;
+    position: absolute;
+    top: 5.5em;
+}
+@media (max-width: 1025px){
+    .lpheading1{
+        font-size: 30px;
+    }
+    .lpscroll1{
+        font-size: 40%;
+    }
+    .lpscroll-img1{
+        width: 75%;
+    }
+}
+
+@media (max-width: 821px){
+    .content-box{
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+    }
+    .lpheading1{
+        left: initial;
+        top: initial;
+        text-align: center;
+    }
+    .lpscroll1{
+        font-size: 40%;
+        width: 90%;
+        left: initial;
+        top: 17em;
+        text-align: center;
+    }
+    .lpscroll-img1{
+        top: initial;
+        width: 50%;
+    }
+    .images-box{
+        height: 60%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 450px)
+{
+
+    .images-box{
+        justify-content: center;
+    }
+    .lpscroll-img1{
+        width: 70%;
+    }
+}
+@media (max-width: 376px)
+{
+
+    .lpscroll1{
+        top: 11em;
+    }
+}
