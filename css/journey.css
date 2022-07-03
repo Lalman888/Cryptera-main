@@ -48,7 +48,7 @@ $vline-circle-color: $text-color;
       justify-content: flex-start;
     }
   }
-  .roadmap-title {
+  .roadmap-title, #walkthrough {
     padding-left: 10%;
 
     z-index: 1;
@@ -56,6 +56,13 @@ $vline-circle-color: $text-color;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.2em;
     line-height: 1.1;
+  }
+  #walkthrough {
+    font-size: 20px;
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   @media (min-width: 1201px) {
     .roadmap-title {
@@ -155,7 +162,7 @@ $vline-circle-color: $text-color;
     position: absolute;
     width: 25px;
     height: 25px;
-    background: #fff;
+    background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
     border-radius: 50%;
   }
   @media (min-width: 1201px) {
