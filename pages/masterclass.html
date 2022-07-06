@@ -19,7 +19,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+          jQuery.ajax({
+                    url: 'ajax/fundamental.html',
+                    type: 'GET',
+                    success: function (data) {
+                        $('.load1').html(data);
+                    }
+                });
+        });
+        $(document).ready(function () {
             $(".button-1").click(function () {
+             
                 jQuery.ajax({
                     url: 'ajax/fundamental.html',
                     type: 'GET',
@@ -31,6 +41,7 @@
         });
         $(document).ready(function () {
             $(".button-2").click(function () {
+              
                 jQuery.ajax({
                     url: 'ajax/sentimental.html',
                     type: 'GET',
@@ -42,6 +53,7 @@
         });
         $(document).ready(function () {
             $(".button-3").click(function () {
+              
                 jQuery.ajax({
                     url: 'ajax/technical.html',
                     type: 'GET',
@@ -53,6 +65,7 @@
         });
         $(document).ready(function () {
             $(".button-4").click(function () {
+             
                 jQuery.ajax({
                     url: 'ajax/walkthrough.html',
                     type: 'GET',
@@ -180,7 +193,7 @@
             <p>Immediate support/ Query solving to accelerate your journey</p>
         </div>
         <div class="flex-col">
-            <img src="/assets/img/lifechanging.svg" alt="">
+            <img src="/assets/img/lifechanging 1.png" alt="">
             <h4>Life-Changing Opportunities </h4>
             <p>Internship, World Blockchain Summit participation, Meet-ups</p>
         </div>
@@ -191,77 +204,17 @@
             <p>Sense of achievement, Welcome to 1% club</p>
         </div>
       </section>
-      <div class="roadmap">
-        <div class="roadmap-bg"></div>
-        <h1 class="roadmap-title">Roadmap</h1>
-        <ol class="roadmap-timeline js-roadmap-timeline">
-      
-            <li class="roadmap-timeframe js-roadmap-timeframe">
-              <div class="roadmap-date">FUNDAMENTALS</div>
-              <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
-              
-              <ul class="roadmap-events">
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Understanding Cryptocurrency</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Cryptocurrency $ Their Timieline</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Wallets & Exchanges</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Fund Raising</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Scope of Cryptocurrency</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Investing in Cryptocurrency</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>To The Next Level</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Taxation and Ways to Save Tax</li>
-              </ul>
-            </li>
-      
-            <li class="roadmap-timeframe js-roadmap-timeframe">
-              <div class="roadmap-date">SENTIMENTS</div>
-              <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
-              <ul class="roadmap-events">
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Market Sentiments</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>BULLRUN 2017 - Case Study</li>
-              </ul>
-            </li>
-      
-            <li class="roadmap-timeframe js-roadmap-timeframe">
-              <div class="roadmap-date">TECHNICALS</div>
-              <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
-              <ul class="roadmap-events">
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Introduction to Trading</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Charting & Market Depth</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Price Action</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Elliote Waves</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Indicators</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Smart Money Concepts</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>WYCOFF Methodology!</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Risk Management & Trading Psychology</li>
-              </ul>
-            </li>
-      
-            <li class="roadmap-timeframe js-roadmap-timeframe">
-              <div class="roadmap-date">WALKTHROUGHS</div>
-              <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
-              <ul class="roadmap-events">
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Detailed step-by-step guide of all the platforms and marketplaces yoy can think of!</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>CEXs, DEXs. DEFI Platforms. Wallets. Staking, Mining, Metaverse Lands, NFTs Minting/Flipping</li>
-                <!-- <li class="roadmap-event"><div class="roadmap-vline"></div></li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div></li> -->
-                <!-- <li class="roadmap-event"><div class="roadmap-vline"></div></li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div></li> -->
-                <!-- <li class="roadmap-event"><div class="roadmap-vline"></div></li> -->
-                <!-- <li class="roadmap-event"><div class="roadmap-vline"></div></li> -->
-              </ul>
-            </li>
-      
-            <!-- <li class="roadmap-timeframe js-roadmap-timeframe">
-              <div class="roadmap-date"></div>
-              <svg class="roadmap-swirly" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="-2 0 54 80"><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path><path d="m50,80c0,-21 -49,-26 -49,-59c0,-13 0,-19 -0,-19"></path></svg>
-              <ul class="roadmap-events">
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Expansion of the development team</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Social media and marketing</li>
-                <li class="roadmap-event"><div class="roadmap-vline"></div>Escrow services</li>
-              </ul>
-            </li> -->
-      
-        </ol>
+      <div class="roadmap-btn">
+        <h1 class="roadmaptext">RoadMap!</h1>
+        <div class="btn-wrapper-4">
+          <button class="button-1">Fundamentals</button>
+          <button class="button-2">Sentimental</button>
+          <button class="button-3">Technical</button>
+          <button class="button-4">Walkthrough</button>
+        </div>
+        <div class="load1">
+    
+        </div>
       </div>
     <div class="head">
         <div class="content-box">
@@ -421,7 +374,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js'></script>
     <script src="/js/main.js"></script>
-    <script src="/js/journey.js"></script>
+    <!-- <script src="/js/journey.js"></script> -->
     <script src="/js/imgmove.js"></script>
     <script src="/js/gsap.js"></script>
     <script>

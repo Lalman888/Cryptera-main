@@ -76,6 +76,29 @@ ul{
     margin-left: 5%;
 }
 
+
+.roadmap-btn{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.roadmaptext{
+    justify-self: center;
+    align-self: center;
+}
+.btn-wrapper-4{
+    justify-self: center;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5%;
+}
+.load1{
+    min-height: 100vh;
+}
   
   @keyframes flut {
     from {
@@ -102,6 +125,11 @@ ul{
     .view .square-container {
         left: 55%;
         top: 60%;
+    }
+    .btn-wrapper-4{
+        flex-direction: column;
+        height: 40vh;
+        justify-self: center;
     }
     .head{
         flex-direction: column;

@@ -34,7 +34,7 @@ $vline-circle-color: $text-color;
     padding: 0 80px 80px 0;
     overflow: hidden;
     color: #fff;
-    background-color: black;
+    /* background-color: black; */
     /* background: linear-gradient(45deg, #4d3ff5 0%, #b2f9d0 100%); */
     font-family: "Muli", arial, sans-serif;
     list-style: none;
