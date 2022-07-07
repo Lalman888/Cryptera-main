@@ -20,7 +20,7 @@
     <script>
         $(document).ready(function () {
           jQuery.ajax({
-                    url: 'ajax/fundamental.html',
+                    url: 'ajax/common.html',
                     type: 'GET',
                     success: function (data) {
                         $('.load1').html(data);
@@ -32,6 +32,16 @@
              
                 jQuery.ajax({
                     url: 'ajax/fundamental.html',
+                    type: 'GET',
+                    success: function (data) {
+                        $('.load1').html(data);
+                    }
+                });
+            });
+            $(".button-1").dblclick(function () {
+             
+                jQuery.ajax({
+                    url: 'ajax/common.html',
                     type: 'GET',
                     success: function (data) {
                         $('.load1').html(data);
@@ -50,6 +60,16 @@
                     }
                 });
             });
+            $(".button-2").dblclick(function () {
+             
+             jQuery.ajax({
+                 url: 'ajax/common.html',
+                 type: 'GET',
+                 success: function (data) {
+                     $('.load1').html(data);
+                 }
+             });
+         });
         });
         $(document).ready(function () {
             $(".button-3").click(function () {
@@ -62,6 +82,16 @@
                     }
                 });
             });
+            $(".button-3").dblclick(function () {
+             
+             jQuery.ajax({
+                 url: 'ajax/common.html',
+                 type: 'GET',
+                 success: function (data) {
+                     $('.load1').html(data);
+                 }
+             });
+         });
         });
         $(document).ready(function () {
             $(".button-4").click(function () {
@@ -74,6 +104,16 @@
                     }
                 });
             });
+            $(".button-4").dblclick(function () {
+             
+             jQuery.ajax({
+                 url: 'ajax/common.html',
+                 type: 'GET',
+                 success: function (data) {
+                     $('.load1').html(data);
+                 }
+             });
+         });
         });
     </script>
 </head>
@@ -108,8 +148,8 @@
       </header>
     <section class="flex-left-right">
         <div class="flex-left">
-            <h1 style="max-width: 100%;" class="learn-title">The most <br> <span class="highlight">Comprehensive Modules</span><br> in Crypto </h1>
-            <p style="margin-top: 3%;">Jump into the crypto space and learn from scratch with us in an all inclusive package which comprises of 30+ hours of in-depth content, pro access to the community, sniper callouts and a lot more.</p>
+            <h1 style="max-width: 85%;" class="learn-title">The most <br> <span class="highlight">Comprehensive Modules</span><br> in Crypto </h1>
+            <p style="margin-top: 3%; max-width: 85%;">Jump into the crypto space and learn from scratch with us in an all inclusive package which comprises of 30+ hours of in-depth content, pro access to the community, sniper callouts and a lot more.</p>
         </div>
         <div class="flex-right">
             <img class="masterclass-img" src="/assets/img/masterclass-hero.png" alt="">
@@ -205,10 +245,10 @@
         </div>
       </section>
       <div class="roadmap-btn">
-        <h1 class="roadmaptext">RoadMap!</h1>
         <div class="btn-wrapper-4">
           <button class="button-1">Fundamentals</button>
           <button class="button-2">Sentimental</button>
+          <h1 class="roadmaptext highlight">RoadMap!</h1>
           <button class="button-3">Technical</button>
           <button class="button-4">Walkthrough</button>
         </div>
@@ -434,7 +474,7 @@
       preloader.style.display = 'none';
     }
   </script>
-  <script>
+  <!-- <script>
     $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
@@ -447,5 +487,5 @@
 	  }
   })
 })
-  </script>
+  </script> -->
 </html>
