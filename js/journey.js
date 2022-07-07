@@ -53,7 +53,7 @@ var roadmap = (function() {
   
   function styleWrapper() {
     wrapper.style.paddingBottom = bottomMaxHeight + 'px';
-    wrapper.style.paddingTop = topMaxHeight + 'px';
+    wrapper.style.paddingTop = topMaxHeight - 120 + 'px';
   }
   
   function clearWrapperStyling() {
