@@ -87,7 +87,7 @@
   }
   @-webkit-keyframes push-out {
     0% {
-      opacity: 1;
+      opacity: 0;
       -webkit-transform: translateY(0);
     }
     60% {
@@ -101,7 +101,7 @@
   }
   @-moz-keyframes push-out {
     0% {
-      opacity: 1;
+      opacity: 0;
       -moz-transform: translateY(0);
     }
     60% {
@@ -115,7 +115,7 @@
   }
   @keyframes push-out {
     0% {
-      opacity: 1;
+      opacity: 0;
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
       -ms-transform: translateY(0);
