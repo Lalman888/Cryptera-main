@@ -113,10 +113,22 @@
   -o-transition: all .3s;
   transition: all .3s
 }
+.flex-left img{
+  width: 90%;
+  height: 60%;
+}
+.iqshant{
+  height: 70%; 
+  width: 45%;
+}
 
 @media(max-width:768px) {
-  #aboutMain, #mentor {
-    display: none;
+  #mentorr{
+    height: 150vh;
+  }
+  .iqshant{
+    height: 70%; 
+    width: 60%;
   }
   .team__item {
     height: 220px
