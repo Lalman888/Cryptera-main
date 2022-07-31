@@ -30,6 +30,30 @@
     animation-fill-mode: forwards;
     transform: rotateY(25deg) translateZ(0);
 }
+
+#uc_super_fun_liquid_button_elementor39407 {
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    z-index: 2;
+}
+#uc_super_fun_liquid_button_elementor39407 canvas {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 250px;
+    height: 100px;
+
+}
+
 @keyframes imgcycle {
     100% {
       transform: rotateY(-15deg);
