@@ -216,4 +216,10 @@
   .navbar-mobile .dropdown > .dropdown-active {
     display: block;
   }
-  
+  @media (max-width:1000px)
+{
+  #header{
+        background-image: none;
+        background-color: #000000;
+    }
+}

@@ -321,6 +321,10 @@ width: 100%;
 
 @media (max-width:1000px)
 {
+    body{
+        background-image: none;
+        background-color: #000000;
+    }
     .flex-left-right{
         flex-direction: column;
     }

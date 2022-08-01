@@ -81,11 +81,12 @@
 
 .flex-left-right .flex-left iframe{
     width: 90%;
+    height: 50%;
 }
 @media (max-width:1000px)
 {
     .flex-left{
-        justify-content: flex-end;
+        justify-content: center;
     }
     .flex-left-right .flex-left h1{
         font-size: 50px;
