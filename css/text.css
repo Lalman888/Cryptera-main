@@ -11,7 +11,7 @@
   }
   .words-wrapper b {
     display: none;
-    display: inline-block;
+
     position: absolute;
     white-space: nowrap;
     background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);

@@ -81,7 +81,7 @@
 
 .flex-left-right .flex-left iframe{
     width: 90%;
-    height: 35%;
+
 }
 @media (max-width:1000px)
 {
@@ -95,7 +95,8 @@
         width: 100%;
     }
     .flex-left-right .flex-left iframe{
-        width: 80%;
+        width: 90%;
+        height: 35%;
     }
 }
 @media (max-width:450px)
