@@ -11,7 +11,8 @@
 }
 
 .team__item {
-  height: 350px;
+  height: 400px;
+  width: 80%;
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
@@ -103,7 +104,7 @@
 }
 
 .team__text p {
-  font-size: 12px;
+  font-size: 15px;
   color: #e4e4e4;
   opacity: 0;
   visibility: hidden;
@@ -123,8 +124,12 @@
 }
 
 @media(max-width:768px) {
+  #aboutMain {
+    margin-top: 10%;
+  }
   #mentorr{
     height: 150vh;
+    margin-top: 30% !important;
   }
   .iqshant{
     height: 70%; 
