@@ -11,3 +11,13 @@
     height: 100px;
     width: 120px;
 }
+.col-4-item:hover .col-img-4{
+    transform: translateY(-10px);
+}
+@media (max-width:600px)
+{
+	.flex-col-4{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
