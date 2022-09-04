@@ -24,4 +24,7 @@
         flex-direction: column;
         justify-content: center;
     }
+    .col-img-4{
+        margin-bottom: 10%;
+    }
 }

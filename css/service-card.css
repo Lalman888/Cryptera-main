@@ -1,0 +1,65 @@
+.three-card-contain{
+    height: auto;
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+@media (orientation: portrait) {
+    .wrap-cards-space {
+      flex-direction: column;
+    }
+    .border-outline-box{
+        margin-bottom: 5%;
+    }
+  }
+.wrap-cards-space{
+    width: 90%;
+    height: auto;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+}
+.border-outline-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 522px;
+    width: 322px;
+    border-radius: 10px;
+    background-image: linear-gradient(155.75deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 29.69%, rgba(255, 255, 255, 0) 77.58%, #FFFFFF 100%);
+    transition: 5s ease-in;
+}
+.border-outline-box:hover{
+    background-image: linear-gradient(204.25deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 29.69%, rgba(255, 255, 255, 0) 77.58%, #FFFFFF 100%);
+}
+.border-box-custom{
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    width: 320px;
+    background: linear-gradient(155.75deg, #0e0e0e 0%, #000000 100%);
+    border-radius: 10px;
+    /* background: url(/assets/services/bg-ecosystem-li.png) no-repeat 50%;
+    background-size: cover; */
+}
+.box-card1{
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-card1 h2{
+    font-size: 1.5em;
+}
+.card-spacer{
+    height: 10px;
+    width: 100%;
+}
