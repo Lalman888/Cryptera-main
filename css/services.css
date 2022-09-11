@@ -32,7 +32,7 @@
     height: auto;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-around;
     align-items: center;
   }
@@ -58,6 +58,21 @@
 	justify-content: center;
 	align-items: center;
 }
+.btnbtn-wrap{
+  height: 30px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+.btn-btn-btn:hover{
+  text-decoration: none;
+  transform: scale(1.1);
+  color: black;
+}
+a{
+  text-decoration: none;
+}
 .btn-btn-btn{
     color: black;
     font-family: 'Poppins', sans-serif;
@@ -78,4 +93,10 @@
 	.form-left-right{
 		flex-direction: column;
 	}
+  .btn-wrapper{
+    flex-direction: column;
+  }
+  .btn-btn-btn{
+    margin-top: 5%;
+  }
 }
