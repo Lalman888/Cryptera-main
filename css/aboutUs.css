@@ -143,7 +143,9 @@
   .team__text {
     padding: 25px 20px 20px
   }
-  
+  .team__text p{
+    font-size: 12px;
+  }
   section {
     margin-top: 10% !important;
   }
