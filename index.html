@@ -173,7 +173,7 @@
               alt="">
             <div class="text">
               <h3>Email</h3>
-              <p style="margin-bottom: 0;">team@thecryptera.com</p>
+              <p style="margin-bottom: 0;">iqshant@thecryptera.com</p>
             </div>
           </div>
           <div class="pointer">
@@ -189,19 +189,21 @@
       </div>
       <div class="flex-right">
         <div class="box">
-
-          <form class="contact us">
+  <!-- nsubmit="sendMail(); reset(); return false;" -->
+          <form class="contact us" 
+          id="my-form" action="https://formspree.io/f/xoqzdgql" method="POST">
             <label class="label-form">Ready to Get Started?</label>
             <label class="label-form2">Fill up the Form to get a Call from our Academic Counseller</label>
-            <input type="email" placeholder="Your name" />
-            <input type="text" placeholder="Your email address" />
-            <input type="tel" placeholder="Your phone number" />
-            <input type="text" placeholder="Your City" />
+            <input type="text" name="name" id="name" placeholder="Your name" />
+            <input type="email" name="email" id="email" placeholder="Your email address" required/>
+            <input type="number" name="phone" id="phone" placeholder="Your phone number" />
+            <input type="text" name="city" id="city" placeholder="Your City" />
             <div class="terms">
-              <input style="margin-top: 0;" class="check" type="checkbox" required>
+              <input style="margin-top: 0;" name="terms" class="check" type="checkbox" required>
               <label for="terms">I accept the <a target="_blank" href="/pages/terms-and-conditions.html"> terms and conditions</a></label>
             </div>
-            <button class="btn-submit" type="submit">Submit</button>
+            <button id="my-form-button" class="btn-submit" type="submit">Submit</button>
+            <p id="my-form-status"></p>
           </form>
 
         </div>
@@ -364,4 +366,54 @@
   })
 })
   </script> -->
+
+  <!-- form submit -->
+  <!-- <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+  <script>
+    function sendMail(){
+      Email.send({
+    SecureToken : "afc3a246-bc2d-4cb6-8533-76445c60efb3",
+    From : document.getElementById("email").value,
+    To : 'tech@thecryptera.com',
+    Subject : 'Cryptera New User',
+    Body : "Name: "+ document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Phone: " + document.getElementById("phone").value + "<br> City: " + document.getElementById("city").value ,
+}).then(
+  message => alert(message)
+);
+    }
+  </script> -->
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 </body>
