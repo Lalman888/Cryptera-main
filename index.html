@@ -1,358 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptera - Learn Cryptocurrency, Metaverse, NFTs, Trading</title>
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/text.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/landing2.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/logo/cryptera-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cryptera - Learn Cryptocurrency, Metaverse, NFTs, Trading</title>
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/footer.css">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/text.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/nav.css">
-  <link rel="stylesheet" href="/css/landing2.css">
-  <link rel="shortcut icon" href="/assets/logo/cryptera-favicon.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css" />
-</head>
-
-<body onload="myFunction()">
-  <style type="text/css">
-    #uc_super_fun_liquid_button_elementor35083 {
-      background: none;
-      padding: 20px 50px;
-      border-radius: 50px;
-      position: relative;
-      display: inline-block;
-      color: #ffffff;
-      text-decoration: none;
-      z-index: 2;
-    }
-
-    #uc_super_fun_liquid_button_elementor35083 canvas {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
-  </style>
-  <div id="loading"></div>
-  
-  <div id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a href="/index.html" class="logo"><img src="/assets/logo/cryptera-logo.svg" alt="" class="img-fluid"></a>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="/pages/about-us.html">About Us</a></li>
-          <li><a href="/pages/masterclass.html">Masterclass</a></li>
-          <li><a href="/pages/services.html">Services</a></li>
-          <li><a href="/pages/partnership.html">Partnership</a></li>
-          <li><a href="/pages/join-us.html">Join Us</a></li>
-        </ul>
-        <div class="bottom-line"></div>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <div class="header-social-links">
-        <a target="_blank" href="https://www.youtube.com/channel/UCdAk19E5NBOnmDjEAnR33rg"><img
-            src="/assets/logo/youtube.svg" alt=""></a>
-        <a target="_blank" href="https://discord.com/invite/pbzTER4G7V"><img src="/assets/logo/discord.svg" alt=""></a>
-        <a target="_blank" href="https://twitter.com/theCryptera"><img src="/assets/logo/twitter.svg" alt=""></a>
-        <a target="_blank" href="https://www.instagram.com/thecryptera/"><img src="/assets/logo/instagram.svg"
-            alt=""></a>
-        <a target="_blank" href="https://t.me/thecryptera"><img src="/assets/logo/telegram.svg" alt=""></a>
-
-      </div>
-    </div>
-  </div>
-  <section class="flex-left-right">
-    <div class="flex-left">
-      <h1 class="learn-title">Learn</h1>
-      <!-- <h1 class="title"><span class="rotate"></span></h1> -->
-      <div class="word-fix">
-        <span class="words-wrapper">
-          <b class="is-visible">Cryptos</b>
-          <b>NFTs</b>
-          <b>Metaverse</b>
-          <b>Trading</b>
-        </span>
-      </div>
-      
-      <br>
-      <div style="width:60%; display:flex; flex-wrap:wrap; justify-content:space-around;" class="btn-wrap">
-        <div class="uc-liquid-button-wrapper">
-          <a id="uc_super_fun_liquid_button_elementor39409" class="uc-liquid-button" href="/pages/enroll-now.html"
-            data-margin="30" data-color1="#32EC93" data-color2="#AFF000" data-color3="#36E25C">
-            Enroll Now
-          </a>
-        </div>
-        <div class="uc-liquid-button-wrapper">
-          <a id="uc_super_fun_liquid_button_elementor39408" class="uc-liquid-button"
-            href="https://discord.com/invite/pbzTER4G7V" data-margin="30" data-color1="#32EC93" data-color2="#AFF000"
-            data-color3="#36E25C">
-            Join Discord
-          </a>
-        </div>
-      </div>
-    </div>
-    <div style="justify-content: flex-end; align-items: flex-start;" class="flex-right"><video height="90%" width="100%"
-        loop autoplay muted src="/assets/video/hand-hero-final1.mp4" type="video/mp4"></video></div>
-  </section>
-  <section class="flex-left-right">
-    <div style="flex-basis: 150%;" class="flex-left">
-      <iframe width="760" height="415" src="https://www.youtube-nocookie.com/embed/hjt6V2iYeFU" title="YouTube video player" SameSite=Secure; frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-    <div style="height: auto; flex-direction: column;" class="flex-right lp2">
-      <h1 class="screen2">What is <span class="highlight">Cryptera?</span></h1>
-      <br>
-      <p style="font-weight: 400;" class="screen2-p">Cryptera is the go-to place for everything that is there in the
-        Crypto Space; from Investing in your first Cryptocurrency to using leverage to your benefit and making profits
-        through Trading & getting in-depth about the <a href="/pages/masterclass.html" class="highlight">Blockchain, DeFi, NFTs, Metaverse, Web3</a>, and Whatnot. We have got
-        you covered!</p>
-    </div>
-  </section>
-  <div class="head">
-    <div class="content-box">
-      
-      <h2 style="opacity: 1;" class="lpheading1" id="heading1">One place to learn <br><span class="highlight">Trading and Investing</span></h2>
-      <p style="opacity: 1;" class="lpscroll1" id="heading1">We help you become a crypto expert by making you to learn the ABCs crypto and how
-        to make money off of it by trading.</p>
-      <h2 class="lpheading1" id="heading2">Learn from <span class="highlight">Industry Expert</span></h2>
-      <p class="lpscroll1" id="heading2">Our in house mentors have experience of over 5 years in the crypto and trading
-        space, making your learning journey a breeze</p>
-      <h2 class="lpheading1" id="heading3">Learning with <span class="highlight">Community is Easy & Fun</span></h2>
-      <p class="lpscroll1" id="heading3">You're not alone in this trading journey! Join other learners and traders by participating in our Daily Market Analysis, Latest Crypto Updates, Instant Query Solving and a lot more</p>
-  
-    </div>
-    <div class="images-box" id="imageContainer">
-      <img style="opacity: 1;" id="img1" #scrollImg src="/assets/img/image 1.png" alt="2" class="lpscroll-img1">
-      <img id="img2" #scrollImg src="/assets/img/TCHN 1.png" alt="3" class="lpscroll-img2">
-      <img id="img3" #scrollImg src="/assets/img/all social platform 1.png" alt="4" class="lpscroll-img4">
-    </div>
-  </div>
-
-  <section id="contact" style="height: auto; margin-bottom: 10%;" class="flex-left-right bgspiral">
-    <div class="contains">
-      <div class="flex-left">
-        <div class="get-contact">
-          <h2><span class="highlight">Get in Touch</span></h2>
-          <p style="max-width: 100%;">Have any queries? or want to know more? <br> Contact Us and we will be happy to help</p>
-          <div class="pointer">
-            <img
-              src="/assets/form/support.png"
-              alt="">
-            <div class="text">
-              <h3>Instant Query</h3>
-              <p style="margin-bottom: 0;">+91 87250 05565</p>
-            </div>
-          </div>
-          <div class="pointer">
-            <img
-              src="/assets/form/whatsapp support.png"
-              alt="">
-            <div class="text">
-              <h3>Whatsapp</h3>
-              <p style="margin-bottom: 0;">+91 87250 05565</p>
-            </div>
-          </div>
-          <div class="pointer">
-            <img
-              src="/assets/form/email.png"
-              alt="">
-            <div class="text">
-              <h3>Email</h3>
-              <p style="margin-bottom: 0;">iqshant@thecryptera.com</p>
-            </div>
-          </div>
-          <div class="pointer">
-            <img
-              src="/assets/form/24hrs service.png"
-              alt="">
-            <div class="text">
-              <h3>Working Timing</h3>
-              <p style="margin-bottom: 0;">10am - 10pm</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex-right">
-        <div class="box">
-  <!-- nsubmit="sendMail(); reset(); return false;" -->
-          <form class="contact us" 
-          id="my-form" action="https://formspree.io/f/xoqzdgql" method="POST">
-            <label class="label-form">Ready to Get Started?</label>
-            <label class="label-form2">Fill up the Form to get a Call from our Academic Counseller</label>
-            <input type="text" name="name" id="name" placeholder="Your name" />
-            <input type="email" name="email" id="email" placeholder="Your email address" required/>
-            <input type="number" name="phone" id="phone" placeholder="Your phone number" />
-            <input type="text" name="city" id="city" placeholder="Your City" />
-            <div class="terms">
-              <input style="margin-top: 0;" name="terms" class="check" type="checkbox" required>
-              <label for="terms">I accept the <a target="_blank" href="/pages/terms-and-conditions.html"> terms and conditions</a></label>
-            </div>
-            <button id="my-form-button" class="btn-submit" type="submit">Submit</button>
-            <p id="my-form-status"></p>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer-section">
-    <div class="container">
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="/index.html"><img src="/assets/logo/cryptera-logo.svg" class="img-fluid" alt="logo"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <ul>
-                            <li><a href="/pages/about-us.html">About Us</a></li>
-                            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="/pages/masterclass.html">MasterClass</a></li>
-                            <li><a href="/pages/refund-policy.html">Refund Policy</a></li>
-                            <li><a href="/coming soon/index.html">Blogs</a></li>
-                            <li><a href="/pages/about-us.html#team">Team</a></li>
-                            <li><a href="/coming soon/index.html">Resources</a></li>
-                            <li><a href="/pages/masterclass.html#roadmap">Road Map</a></li>
-                            <li><a href="/coming soon/index.html">Join Us</a></li>
-                            <li><a href="/index.html#contact">Get in Touch</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Follow Us</h3>
-                        </div>
-                        <div class="changed">
-                            <ul>
-                                <li><a target="_blank" href="https://www.youtube.com/channel/UCdAk19E5NBOnmDjEAnR33rg">Youtube</a></li>
-                                <li><a target="_blank" href="https://discord.com/invite/NWh9URNvgs">Discord</a></li>
-                                <li><a target="_blank" href="https://twitter.com/theCryptera">Twitter</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/thecryptera/">Instagram</a></li>
-                                <li><a target="_blank" href="https://t.me/thecryptera">Telegram</a></li>
-                                
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        
-                        <p>Made By <a href="#">BAM</a></p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                  <div class="copyright-text">
-                    <p style="margin-left: 10%;">Copyright &copy; 2022, All Right Reserved <a href="#">TheCryptera</a></p>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="/js/text.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js'></script>
-  <script src="/js/gsap.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/jquery.simple-text-rotator.min.js"></script>
-  <script src="/js/button.js"></script>
-  <script src='https://radfrens.club/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
-  <script src='https://radfrens.club/wp-content/uploads/ac_assets/superfun_liquid_button/liquid_button.js?ver=1.5.11'
-    id='uc_ac_assets_file_liquid_button_js_9843-js'></script>
-  <script>
-    $("h1 .rotate").textrotator({
-      animation: "flipUp",
-      speed: 3000
-    });
-  </script>
-  <script>
-    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?6342';
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = url;
-    var options = {
-      "enabled": true,
-      "chatButtonSetting": {
-        "backgroundColor": "#4dc247",
-        "ctaText": "",
-        "borderRadius": "25",
-        "marginLeft": "0",
-        "marginBottom": "50",
-        "marginRight": "50",
-        "position": "right"
-      },
-      "brandSetting": {
-        "brandName": "Cryptera",
-        "brandSubTitle": "Chats encrypted like Crypto",
-        "brandImg": "/assets/logo/cryptera-logo.svg",
-        "welcomeText": "Hi there!\nHow can I help you?",
-        "messageText": "Hello, I have a question about {{page_link}}",
-        "backgroundColor": "#0a5f54",
-        "ctaText": "Start Chat",
-        "borderRadius": "25",
-        "autoShow": false,
-        "phoneNumber": "+91 87250 05565"
+  <body onload="myFunction()">
+    <style type="text/css">
+      #uc_super_fun_liquid_button_elementor35083 {
+        background: none;
+        padding: 20px 50px;
+        border-radius: 50px;
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        z-index: 2;
       }
-    };
-    s.onload = function () {
-      CreateWhatsappChatWidget(options);
-    };
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  </script>
-  <script>
-    var preloader = document.getElementById('loading');
 
-    function myFunction() {
-      setTimeout(removeLoader, 2000);
-    }
-    function removeLoader() {
-      preloader.style.display = 'none';
-    }
-  </script>
-  <!-- <script>
+      #uc_super_fun_liquid_button_elementor35083 canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    </style>
+    <div id="loading"></div>
+
+    <div id="header" class="fixed-top">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a href="/index.html" class="logo"
+          ><img src="/assets/logo/cryptera-logo.svg" alt="" class="img-fluid"
+        /></a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="/pages/about-us.html">About Us</a></li>
+            <li><a href="/pages/masterclass.html">Masterclass</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/partnership.html">Partnership</a></li>
+            <li><a href="/pages/join-us.html">Join Us</a></li>
+          </ul>
+          <div class="bottom-line"></div>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <div class="header-social-links">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCdAk19E5NBOnmDjEAnR33rg"
+            ><img src="/assets/logo/youtube.svg" alt=""
+          /></a>
+          <a target="_blank" href="https://discord.com/invite/pbzTER4G7V"
+            ><img src="/assets/logo/discord.svg" alt=""
+          /></a>
+          <a target="_blank" href="https://twitter.com/theCryptera"
+            ><img src="/assets/logo/twitter.svg" alt=""
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/thecryptera/"
+            ><img src="/assets/logo/instagram.svg" alt=""
+          /></a>
+          <a target="_blank" href="https://t.me/thecryptera"
+            ><img src="/assets/logo/telegram.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <section class="flex-left-right">
+      <div class="flex-left">
+        <h1 class="learn-title">Learn</h1>
+        <!-- <h1 class="title"><span class="rotate"></span></h1> -->
+        <div class="word-fix">
+          <span class="words-wrapper">
+            <b class="is-visible">Cryptos</b>
+            <b>NFTs</b>
+            <b>Metaverse</b>
+            <b>Trading</b>
+          </span>
+        </div>
+
+        <br />
+        <div
+          style="
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+          "
+          class="btn-wrap"
+        >
+          <div class="uc-liquid-button-wrapper">
+            <a
+              id="uc_super_fun_liquid_button_elementor39409"
+              class="uc-liquid-button"
+              href="/pages/enroll-now.html"
+              data-margin="30"
+              data-color1="#32EC93"
+              data-color2="#AFF000"
+              data-color3="#36E25C"
+            >
+              Enroll Now
+            </a>
+          </div>
+          <div class="uc-liquid-button-wrapper">
+            <a
+              id="uc_super_fun_liquid_button_elementor39408"
+              class="uc-liquid-button"
+              href="https://discord.com/invite/pbzTER4G7V"
+              data-margin="30"
+              data-color1="#32EC93"
+              data-color2="#AFF000"
+              data-color3="#36E25C"
+            >
+              Join Discord
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        style="justify-content: flex-end; align-items: flex-start"
+        class="flex-right"
+      >
+        <video
+          height="90%"
+          width="100%"
+          loop
+          autoplay
+          muted
+          src="/assets/video/hand-hero-final1.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+    </section>
+    <section class="flex-left-right">
+      <div style="flex-basis: 150%" class="flex-left">
+        <iframe
+          width="760"
+          height="415"
+          src="https://www.youtube-nocookie.com/embed/hjt6V2iYeFU"
+          title="YouTube video player"
+          SameSite="Secure;"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div style="height: auto; flex-direction: column" class="flex-right lp2">
+        <h1 class="screen2">
+          What is <span class="highlight">Cryptera?</span>
+        </h1>
+        <br />
+        <p style="font-weight: 400" class="screen2-p">
+          Cryptera is the go-to place for everything that is there in the Crypto
+          Space; from Investing in your first Cryptocurrency to using leverage
+          to your benefit and making profits through Trading & getting in-depth
+          about the
+          <a href="/pages/masterclass.html" class="highlight"
+            >Blockchain, DeFi, NFTs, Metaverse, Web3</a
+          >, and Whatnot. We have got you covered!
+        </p>
+      </div>
+    </section>
+    <div class="head">
+      <div class="content-box">
+        <h2 style="opacity: 1" class="lpheading1" id="heading1">
+          One place to learn <br /><span class="highlight"
+            >Trading and Investing</span
+          >
+        </h2>
+        <p style="opacity: 1" class="lpscroll1" id="heading1">
+          We help you become a crypto expert by making you to learn the ABCs
+          crypto and how to make money off of it by trading.
+        </p>
+        <h2 class="lpheading1" id="heading2">
+          Learn from <span class="highlight">Industry Expert</span>
+        </h2>
+        <p class="lpscroll1" id="heading2">
+          Our in house mentors have experience of over 5 years in the crypto and
+          trading space, making your learning journey a breeze
+        </p>
+        <h2 class="lpheading1" id="heading3">
+          Learning with <span class="highlight">Community is Easy & Fun</span>
+        </h2>
+        <p class="lpscroll1" id="heading3">
+          You're not alone in this trading journey! Join other learners and
+          traders by participating in our Daily Market Analysis, Latest Crypto
+          Updates, Instant Query Solving and a lot more
+        </p>
+      </div>
+      <div class="images-box" id="imageContainer">
+        <img
+          style="opacity: 1"
+          id="img1"
+          #scrollImg
+          src="/assets/img/image 1.png"
+          alt="2"
+          class="lpscroll-img1"
+        />
+        <img
+          id="img2"
+          #scrollImg
+          src="/assets/img/TCHN 1.png"
+          alt="3"
+          class="lpscroll-img2"
+        />
+        <img
+          id="img3"
+          #scrollImg
+          src="/assets/img/all social platform 1.png"
+          alt="4"
+          class="lpscroll-img4"
+        />
+      </div>
+    </div>
+
+    <section
+      id="contact"
+      style="height: auto; margin-bottom: 10%"
+      class="flex-left-right bgspiral"
+    >
+      <div class="contains">
+        <div class="flex-left">
+          <div class="get-contact">
+            <h2><span class="highlight">Get in Touch</span></h2>
+            <p style="max-width: 100%">
+              Have any queries? or want to know more? <br />
+              Contact Us and we will be happy to help
+            </p>
+            <div class="pointer">
+              <img src="/assets/form/support.png" alt="" />
+              <div class="text">
+                <h3>Instant Query</h3>
+                <p style="margin-bottom: 0">+91 87250 05565</p>
+              </div>
+            </div>
+            <div class="pointer">
+              <img src="/assets/form/whatsapp support.png" alt="" />
+              <div class="text">
+                <h3>Whatsapp</h3>
+                <p style="margin-bottom: 0">+91 87250 05565</p>
+              </div>
+            </div>
+            <div class="pointer">
+              <img src="/assets/form/email.png" alt="" />
+              <div class="text">
+                <h3>Email</h3>
+                <p style="margin-bottom: 0">iqshant@thecryptera.com</p>
+              </div>
+            </div>
+            <div class="pointer">
+              <img src="/assets/form/24hrs service.png" alt="" />
+              <div class="text">
+                <h3>Working Timing</h3>
+                <p style="margin-bottom: 0">10am - 10pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-right">
+          <div class="box">
+            <!-- nsubmit="sendMail(); reset(); return false;" -->
+            <!-- action="https://formspree.io/f/xoqzdgql"  -->
+            <form
+              class="contact us"
+              name="google-sheet"
+              id="my-form"
+              method="POST"
+            >
+              <label class="label-form">Ready to Get Started?</label>
+              <label class="label-form2"
+                >Fill up the Form to get a Call from our Academic
+                Counseller</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address"
+                required
+              />
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Your phone number"
+              />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your City"
+              />
+              <div class="terms">
+                <input
+                  style="margin-top: 0"
+                  name="terms"
+                  class="check"
+                  type="checkbox"
+                  required
+                />
+                <label for="terms"
+                  >I accept the
+                  <a target="_blank" href="/pages/terms-and-conditions.html">
+                    terms and conditions</a
+                  ></label
+                >
+              </div>
+              <button
+                id="my-form-button"
+                name="submit"
+                class="btn-submit"
+                type="submit"
+              >
+                Submit
+              </button>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="/index.html"
+                    ><img
+                      src="/assets/logo/cryptera-logo.svg"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="/pages/about-us.html">About Us</a></li>
+                  <li>
+                    <a href="/pages/privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li><a href="/pages/masterclass.html">MasterClass</a></li>
+                  <li><a href="/pages/refund-policy.html">Refund Policy</a></li>
+                  <li><a href="/coming soon/index.html">Blogs</a></li>
+                  <li><a href="/pages/about-us.html#team">Team</a></li>
+                  <li><a href="/coming soon/index.html">Resources</a></li>
+                  <li>
+                    <a href="/pages/masterclass.html#roadmap">Road Map</a>
+                  </li>
+                  <li><a href="/coming soon/index.html">Join Us</a></li>
+                  <li><a href="/index.html#contact">Get in Touch</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Follow Us</h3>
+                </div>
+                <div class="changed">
+                  <ul>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.youtube.com/channel/UCdAk19E5NBOnmDjEAnR33rg"
+                        >Youtube</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://discord.com/invite/NWh9URNvgs"
+                        >Discord</a
+                      >
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://twitter.com/theCryptera"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/thecryptera/"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://t.me/thecryptera"
+                        >Telegram</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Made By <a href="#">BAM</a></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="copyright-text">
+                <p style="margin-left: 10%">
+                  Copyright &copy; 2022, All Right Reserved
+                  <a href="#">TheCryptera</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/text.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="/js/gsap.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/jquery.simple-text-rotator.min.js"></script>
+    <script src="/js/button.js"></script>
+    <script
+      src="https://radfrens.club/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"
+      id="jquery-core-js"
+    ></script>
+    <script
+      src="https://radfrens.club/wp-content/uploads/ac_assets/superfun_liquid_button/liquid_button.js?ver=1.5.11"
+      id="uc_ac_assets_file_liquid_button_js_9843-js"
+    ></script>
+
+    <!-- toast -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+      $("h1 .rotate").textrotator({
+        animation: "flipUp",
+        speed: 3000,
+      });
+    </script>
+    <script>
+      var url =
+        "https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?6342";
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url;
+      var options = {
+        enabled: true,
+        chatButtonSetting: {
+          backgroundColor: "#4dc247",
+          ctaText: "",
+          borderRadius: "25",
+          marginLeft: "0",
+          marginBottom: "50",
+          marginRight: "50",
+          position: "right",
+        },
+        brandSetting: {
+          brandName: "Cryptera",
+          brandSubTitle: "Chats encrypted like Crypto",
+          brandImg: "/assets/logo/cryptera-logo.svg",
+          welcomeText: "Hi there!\nHow can I help you?",
+          messageText: "Hello, I have a question about {{page_link}}",
+          backgroundColor: "#0a5f54",
+          ctaText: "Start Chat",
+          borderRadius: "25",
+          autoShow: false,
+          phoneNumber: "+91 87250 05565",
+        },
+      };
+      s.onload = function () {
+        CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
+    <script>
+      var preloader = document.getElementById("loading");
+
+      function myFunction() {
+        setTimeout(removeLoader, 2000);
+      }
+      function removeLoader() {
+        preloader.style.display = "none";
+      }
+    </script>
+    <!-- <script>
     $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
@@ -367,8 +585,8 @@
 })
   </script> -->
 
-  <!-- form submit -->
-  <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    <!-- form submit -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
   </script>
 
   <script>
@@ -384,7 +602,7 @@
 );
     }
   </script> -->
-  <script>
+    <!-- <script>
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
@@ -415,5 +633,42 @@
       });
     }
     form.addEventListener("submit", handleSubmit)
-</script>
-</body>
+</script> -->
+
+    <!-- google sheet code -->
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw8Jk_tuJEQhNfS3RKaBFWYldWvSlm9KeAS-8ysO9RgXNqkXPx1kIy6Jc0qXfz4jg0KfQ/exec";
+      const form = document.forms["google-sheet"];
+      var formb = document.getElementById("my-form");
+      var status = document.getElementById("my-form-status");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            if (response.ok) {
+              // status.innerHTML = "Thanks for your submission!";
+              toastr.success("Thanks for your submission!");
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      });
+    </script>
+  </body>
+</html>
