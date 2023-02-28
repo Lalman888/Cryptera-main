@@ -193,6 +193,22 @@ ul{
         left: 60%;
         top: 70%;
     }
+    .enroll-btn-m{
+        padding-left: 10rem;
+    }
+    .navbar-mobile>ul {
+        background-color: black!important;
+    }
+    .navbar-mobile>ul>li {
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .navbar-mobile a, .navbar-mobile a:focus {
+        background: linear-gradient(90deg, #9DD317 3.37%, #36E25C 78.92%, #32EC93 98.18%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.2rem!important;
+    }
 }
 
 @media (max-width: 399px) {
