@@ -21,6 +21,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css" />
     <script>
@@ -32,6 +36,44 @@
       return false;
       }
     }
+    </script>
+    <!-- toast -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      /* Start client-defined Callback Handler Functions */
+    
+
+      function onCloseHandler () {
+        // alert('Payments Modal is Closed');
+        toastr.success("Payments Modal is Closed");
+      }
+
+      function onPaymentSuccessHandler (response) {
+        // alert('Payment Success');
+        toastr.success("Payment Success");
+        console.log('Payment Success Response', response);
+      }
+
+      function onPaymentFailureHandler (response) {
+        // alert('Payment Failure');
+        toastr.error("Payment Failure");
+        console.log('Payment Failure Response', response);
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        handlers: {
+          onClose: onCloseHandler,
+          onSuccess: onPaymentSuccessHandler,
+          onFailure: onPaymentFailureHandler
+        }
+      });
+      
+      function onButtonClick() {
+        Instamojo.open('https://www.instamojo.com/@cryptera/lec070ed2294141cdb7f004c92dac3006/');
+      }
     </script>
 
 </head>
@@ -85,10 +127,14 @@
             <p> - Ensure to Read All <a href="/pages/terms-and-conditions.html"> Terms and Conditions</a></p>
             <p>-<a href="/pages/refund-policy.html"> Refund Policy </a></p>
             <p>-<a href="/pages/privacy-policy.html"> Privacy Policy </a></p>
-            <a style="justify-content: flex-start;" href="https://www.instamojo.com/@cryptera/lec070ed2294141cdb7f004c92dac3006/" rel="im-checkout" data-text="Pay" data-css-style="color:#ffffff; background:#75c26a; width:300px; border-radius:4px"   data-layout="vertical"></a>
+            <!-- <a style="justify-content: flex-start;" href="https://www.instamojo.com/@cryptera/lec070ed2294141cdb7f004c92dac3006/" rel="im-checkout" data-text="Pay" data-css-style="color:#ffffff; background:#75c26a; width:300px; border-radius:4px"   data-layout="vertical"></a> -->
+            <button style="border-radius: 2.2rem;" class="btn-submit"  onclick="onButtonClick()">
+              Pay Now
+            </button>
           </div>
           
-          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Jzx1nwtHPhXAiP" async> </script> </form>
+        
+          <!-- <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Jzx1nwtHPhXAiP" async> </script> </form> -->
            
             <!-- <form action="/index.html"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Jzx5LxC0OjVvwH" async> </script> </form>  -->
             <!-- test -->
