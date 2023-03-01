@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
     function uc_super_fun_liquid_button_elementor39409_start(){
         jQuery(document).ready(function(){
             var objButton = document.getElementById("uc_super_fun_liquid_button_elementor39409");
+            console.log(objButton,'objButton');
             objButton.liquidButton = new LiquidButton(objButton);
         });
     }
