@@ -2,6 +2,50 @@
     width: 90%;
     height: 60%;
   }
+  /* enroll css */
+  .flex-left img.enroll{
+    width: 80%;
+    height: 72%;
+  }
+  .flex-left-right.banner-enroll {
+    flex-direction: column;
+}
+.enroll-payment-sec {
+    display: flex;
+    justify-content: center;
+    margin-inline: 16%;
+}
+
+@media only screen and (max-width: 760px){
+    .enroll-payment-sec {
+        display: flex;
+        justify-content: center;
+        margin-inline: 6%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .points {
+        flex-direction: column;
+        gap: 0rem!important;
+    }
+    .enroll-payment-sec div {
+        justify-content: center;
+        align-items: center!important;
+        display: flex;
+    }
+    .flex-left img.enroll {
+        width: 90%;
+        height: 80%;
+        padding-top: 7rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .enroll-payment-sec{
+        flex-direction: column;
+    }
+}
+/* end */
 .flex-right{
     display: flex;
     flex-direction: column;
@@ -19,11 +63,15 @@ form label{
 }
 .points{
     height: auto;
-    width: 80%;
+    width: 75%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: flex-start;
+    margin-inline: 8%;
+    margin-top: 2.4rem;
+    padding-bottom: 5rem;
+    gap: 5rem;
 }
 .points a{
     color: white;

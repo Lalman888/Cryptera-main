@@ -72,7 +72,10 @@
       });
       
       function onButtonClick() {
-        Instamojo.open('https://www.instamojo.com/@cryptera/lec070ed2294141cdb7f004c92dac3006/');
+        Instamojo.open('https://www.instamojo.com/@cryptera/lc9e8d738e01c44a5989451c6afc21da7/');
+      }
+      function onButtonClickTwo() {
+        Instamojo.open('https://www.instamojo.com/@cryptera/ld71f1ef9a4764286a882a76e29999957/');
       }
     </script>
 
@@ -117,22 +120,38 @@
           </div>
         </div>
       </div>
-      <section class="flex-left-right" style="margin-top: 2%;">
+      <section class="flex-left-right banner-enroll" style="margin-top: 2%;">
         <div class="flex-left" id="aboutMain">
-          <img  src="/assets/img/about cryptera png 1.png" alt="">
+          <img class="enroll"  src="/assets/img/about cryptera png 1.png" alt="">
         </div>
-        <div class="flex-left" style="align-items: baseline;">
-          <h1>Course Just for </h1>
-          <h1 style="text-decoration: line-through;"><span class="highlight">₹24,999/-</span></h1>
-          <h1><span class="highlight">₹14,999/-</span></h1>
+         <div class="enroll-payment-sec">
+          <div class="flex-left" style="align-items: baseline;">
+            <h1>Crypto and Trading Masterclass </h1>
+            <h1 style="text-decoration: line-through;"><span class="highlight">₹24,999/-</span></h1>
+            <h1><span class="highlight">₹14,999/-</span></h1>
+            <div class="pay-btn-enroll">
+              <button style="border-radius: 2.2rem;" class="btn-submit"  onclick="onButtonClick()">
+                Pay Now
+              </button>
+            </div>
+          </div>
+          <div class="flex-left" style="align-items: baseline;">
+            <h1>Trading Masterclass: Escaping Institutional Traps! </h1>
+            <h1 style="text-decoration: line-through;"><span class="highlight">₹9,999/-</span></h1>
+            <h1><span class="highlight">₹5,999/-</span></h1>
+            <div class="pay-btn-enroll">
+              <button style="border-radius: 2.2rem;" class="btn-submit"  onclick="onButtonClickTwo()">
+                Pay Now
+              </button>
+            </div>
+          </div>
+         </div>
           <div class="points">
             <p> - Ensure to Read All <a href="/pages/terms-and-conditions.html"> Terms and Conditions</a></p>
             <p>-<a href="/pages/refund-policy.html"> Refund Policy </a></p>
             <p>-<a href="/pages/privacy-policy.html"> Privacy Policy </a></p>
             <!-- <a style="justify-content: flex-start;" href="https://www.instamojo.com/@cryptera/lec070ed2294141cdb7f004c92dac3006/" rel="im-checkout" data-text="Pay" data-css-style="color:#ffffff; background:#75c26a; width:300px; border-radius:4px"   data-layout="vertical"></a> -->
-            <button style="border-radius: 2.2rem;" class="btn-submit"  onclick="onButtonClick()">
-              Pay Now
-            </button>
+      
           </div>
           
         
@@ -141,7 +160,7 @@
             <!-- <form action="/index.html"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Jzx5LxC0OjVvwH" async> </script> </form>  -->
             <!-- test -->
         
-        </div>
+        
       </section>
-      
+      <script src="/js/main.js"></script>
 </body>

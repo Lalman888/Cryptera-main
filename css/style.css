@@ -74,8 +74,9 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: left;
-    font-size: 50px;
-    max-width: 80%;
+    font-size: 38px;
+    max-width: 100%;
+    padding-bottom: 4px;
 }
 .bottom-line{
     width: 90%;
