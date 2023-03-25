@@ -4,8 +4,12 @@
   }
   /* enroll css */
   .flex-left img.enroll{
-    width: 80%;
-    height: 72%;
+    width: 84%;
+    height: 80%;
+    padding-top: 4rem;
+  }
+  .points li::marker {
+   font-size: 1.5rem;
   }
   .flex-left-right.banner-enroll {
     flex-direction: column;
@@ -69,7 +73,7 @@ form label{
     justify-content: center;
     align-items: flex-start;
     margin-inline: 8%;
-    margin-top: 2.4rem;
+    margin-top: 4.4rem;
     padding-bottom: 5rem;
     gap: 5rem;
 }
